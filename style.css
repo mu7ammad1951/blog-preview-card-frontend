@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'FigTree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    --primary-yellow: #F4D04E;
+    --secondary-gray-950: #111111;
+    --secondary-gray-500: #6B6B6B;
+    --white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-yellow);
+}
+
+.card {
+    background-color: var(--white);
+    font-family: 'FigTree', Arial, Helvetica, sans-serif;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    border: 1px solid var(--secondary-gray-950);
+    box-shadow: 8px 8px var(--secondary-gray-950);
+    border-radius: 20px;
+}
+
+.card-image {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-details {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--secondary-gray-950)
+}
+
+
+.card-details .category {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: bolder;
+    background-color: var(--primary-yellow);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.card-details .date-published {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.card-details .title {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: bolder;
+}
+
+.card-details .title:hover,
+.card-details .title:focus {
+    color:var(--primary-yellow);
+}
+
+.title a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.card-details .description{
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: var(--secondary-gray-500)
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: bolder;
+}
+
+.author img {
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+}
